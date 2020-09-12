@@ -1,0 +1,144 @@
+.body {
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.c-kpi-card {
+    background-color: rgba(39, 39, 39, 0.99);
+    width: 69%;
+    height: 11.5vh;
+    position: relative;
+    border-radius: 0.6vh;
+    opacity: 0.99;
+    border:0.05em solid rgb(53, 53, 53);
+}
+
+.kpi-title {
+    white-space: nowrap;
+    border-radius: 0.3vh;
+    top: 0;
+    opacity: .8;
+    left: 5vh;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-color: rgb(27, 27, 27);
+    padding: .3em;
+}
+
+.kpi-score {
+    font-weight: bold;
+    margin-top: -0.1vh;
+    color: rgb(39, 39, 39);
+    z-index: 2;
+    background-color: rgb(136, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    border-bottom-left-radius: .6vh;
+    border-top-right-radius: .6vh;
+    padding-bottom: .7vh;
+    float: right;
+    padding-left: .7vh;
+    font-size: 1.5em;
+}
+
+#kpiIcon {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(24, 23, 23, 0.877);;
+    font-size: 3.5vh;
+    position: absolute;
+    border-radius: 0.3vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.vs-net {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    opacity: .9;
+    right: 0.03em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    border-radius: 0.3em 0 0.2em 0;
+    background-color: rgb(112, 112, 112);
+    white-space: nowrap;
+    bottom: 0vh;
+    margin-bottom: -0.01em;
+}
+
+.kpi-source {
+    background-color: rgba(0, 0, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    bottom: 1%;
+    opacity: .9;
+    left: 0.1em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    white-space: nowrap;
+    margin-bottom: -.15em;
+}
+
+.kpi-date {
+    background-color: rgba(140, 0, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 1.5vh;
+    position: absolute;
+    bottom: 1%;
+    opacity: .9;
+    margin-left: 15em;
+    border-radius: 0.3vh;
+    padding: 0.2vh;
+    white-space: nowrap;
+    margin-bottom: -.15em;
+}
+
+.source-date {
+    position: absolute;
+    bottom: 0.23vh;
+}
+
+@media only screen and (max-width: 1300px) {
+    .c-kpi-card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .c-kpi-card {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .c-kpi-card {
+        width: 93%;
+    }
+}
+
+
+  

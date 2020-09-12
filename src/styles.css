@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~material-icons/iconfont/material-icons.css';
+
+@font-face {
+    font-display: block;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    padding-right: 1vh;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(105, 105, 105, 0.411);
+    border-radius: .3vh;;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 10, 10);
+    border-radius: .3vh;;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 22, 22);
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+      background-color: rgb(26, 26, 26);
+  }

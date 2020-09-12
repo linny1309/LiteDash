@@ -1,0 +1,79 @@
+[
+  {
+    "kpi_id": 1,
+    "kpi_title": "Paid Clicks by Application Type",
+    "kpi_icon": "bar_chart",
+    "kpi_source": "IPSOS",
+    "kpi_date": "2020-06-07T04:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": "K",
+    "kpi_unit": "Clicks",
+    "kpi_measure": 909.1
+  },
+  {
+    "kpi_id": 2,
+    "kpi_title": "Paid Search Clicks per Hour by Website",
+    "kpi_icon": "show_chart",
+    "kpi_source": "NeoGenomics",
+    "kpi_date": "2020-05-01T04:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": "K",
+    "kpi_unit": "Clicks",
+    "kpi_measure": 6.1
+  },
+  {
+    "kpi_id": 3,
+    "kpi_title": "Argilach Market Share",
+    "kpi_icon": "pie_chart",
+    "kpi_source": "Adobe Analytics",
+    "kpi_date": "2020-05-31T04:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": "%",
+    "kpi_unit": null,
+    "kpi_measure": 46
+  },
+  {
+    "kpi_id": 4,
+    "kpi_title": "Investment vs ROI / Yrs of Investment",
+    "kpi_icon": "bubble_chart",
+    "kpi_source": "Google Analytics",
+    "kpi_date": "2020-06-01T04:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": "M",
+    "kpi_unit": "ROI",
+    "kpi_measure": 33
+  },
+  {
+    "kpi_id": 5,
+    "kpi_title": "Orders per Customer",
+    "kpi_icon": "scatter_plot",
+    "kpi_source": "SP",
+    "kpi_date": "2020-01-01T05:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": null,
+    "kpi_unit": "Orders",
+    "kpi_measure": 3.2
+  },
+  {
+    "kpi_id": 6,
+    "kpi_title": "Positive Customer Experiences",
+    "kpi_icon": "leak_add",
+    "kpi_source": "IPSOS",
+    "kpi_date": "2020-11-30T05:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": null,
+    "kpi_unit": "Customers",
+    "kpi_measure": 41
+  },
+  {
+    "kpi_id": 7,
+    "kpi_title": "Bulk Orders Placed",
+    "kpi_icon": "multiline_chart",
+    "kpi_source": "Vantage",
+    "kpi_date": "2020-11-30T05:00:00.000Z",
+    "kpi_prev": null,
+    "kpi_post": null,
+    "kpi_unit": "Bulk Orders",
+    "kpi_measure": 49
+  }
+]

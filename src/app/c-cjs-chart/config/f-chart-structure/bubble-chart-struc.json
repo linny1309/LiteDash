@@ -1,0 +1,80 @@
+{
+  "type": "bubble",
+  "plugins" : "[ChartDataLabels]",
+  "data": {
+    "datasets": [
+      {
+        "x": [0],
+        "y": [0],
+        "r": [0],
+        "label": "Brand A",
+        "backgroundColor": "rgba(128, 0, 128, 0.5)",
+        "borderColor": "rgb(128, 0, 128)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      },
+      {
+        "x": [0],
+        "y": [0],
+        "r": [0],
+        "label": "Brand B",
+        "backgroundColor": "rgba(0,255,255,0.5)",
+        "borderColor": "rgb(0,255,255)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      },
+      {
+        "x": [0],
+        "y": [0],
+        "r": [0],
+        "label": "Brand C",
+        "backgroundColor": "rgb(255,140,0,0.5)",
+        "borderColor": "rgb(255,140,0)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      }
+    ]
+  },
+  "options": {
+    "title": {
+      "display": true,
+      "text": "Total Investment vs Total ROI over Years of Investment",
+      "fontSize": 20,
+      "fontColor": "white"
+    },
+    "legend": { "labels": { "fontSize": 10, "fontColor": "white" } },
+    "style": { "fontColor": "white" },
+    "scales": {
+      "yAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Return on Investment (Millions)"
+          }
+        }
+      ],
+      "xAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Years of Investment"
+          }
+        }
+      ]
+    }
+  }
+}

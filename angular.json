@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "LiteDash"
+    }
+  },
+  "defaultProject": "LiteDash",
+  "cli": {
+    "analytics": "26b5a486-1e29-4dff-ae28-c9ec65e741fd"
+  }
 }

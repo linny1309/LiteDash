@@ -4,12 +4,16 @@
     "outDir": "./out-tsc/spec",
     "types": [
       "jasmine",
-      "node"
+      "node",
+      "jest",
+      "mocha"
     ]
   },
   "files": [
     "src/test.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    "src/c-cjs-chart/",
+    "src/app/c-cjs-chart/c-cjs-chart.component.spec.ts"
   ],
   "include": [
     "src/**/*.spec.ts",

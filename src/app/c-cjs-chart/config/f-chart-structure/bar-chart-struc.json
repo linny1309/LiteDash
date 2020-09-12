@@ -1,0 +1,80 @@
+{"type" : "bar",
+"plugins" : "[ChartDataLabels]",
+"data": {
+        "labels": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "datasets": [{
+            "label": "iOS",
+            "backgroundColor": "rgba(255, 166, 0, 0.5)",
+            "hoverBackgroundColor": "rgb(255, 166, 0)",
+            "borderColor": "rgb(255, 166, 0)",
+            "borderWidth": 2,
+            "data": [400,420,300,320,301,415,219,299,340,321,340,400],
+            "datalabels": {
+            "color": "white"
+            }
+        }, {
+            "label": "Android",
+            "backgroundColor": "rgba(0, 183, 255, .5)",
+            "hoverBackgroundColor": "rgb(0, 183, 255)",
+            "borderColor": "rgb(0, 183, 255)",
+            "borderWidth": 2,
+            "data": [340,321,322,433,455,433,322,321,342,543,430,320],
+            "datalabels": {
+            "color": "white"
+            }
+        }, {
+            "label": "Web",
+            "backgroundColor": "rgba(238, 0, 255,.5)",
+            "hoverBackgroundColor": "rgb(238, 0, 255)",
+            "borderColor": "rgb(238, 0, 255)",
+            "borderWidth": 2,
+            "data": [321,344,367,387,432,432,543,345,322,312,340,450],
+            "datalabels": {
+            "color": "white"
+            }
+        }]
+    },
+"options": {
+        "title": {
+            "display": true,
+            "text": "Paid Clicks by Application Type",
+            "fontColor": "white",
+            "fontSize": 20
+        },
+        "legend": {
+            "labels": {
+            "fontSize": 10,
+            "fontColor": "white"
+        }
+        },
+        "scales": {
+        "yAxes": [{
+            "ticks": { 
+                "fontColor": "white",
+                "fontSize": 10,
+                "beginAtZero": true
+            },
+            "scaleLabel": {
+                "fontColor": "white",
+                "display": true,
+                "fontSize": 10,
+                "labelString": "Paid Clicks (Thousands)"
+            }
+        }],
+        "xAxes": 
+        [{
+            "ticks": {
+                "fontColor": "white",
+                "fontSize": 10,
+                "beginAtZero": true
+            },
+            "scaleLabel": {
+                "fontColor": "white",
+                "display": true,
+                "fontSize": 10,
+                "labelString": "Week"
+            }
+        }]
+        }
+    }
+}

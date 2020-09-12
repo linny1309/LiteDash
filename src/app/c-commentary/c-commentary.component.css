@@ -1,0 +1,34 @@
+.body {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.c-commentary {
+    margin-top: 6px;
+    width: 68.4%;
+    background-color: gray;
+    height: 250px;
+    border-radius: 0.3em;
+}
+
+@media only screen and (max-width: 1300px) {
+    .c-commentary {
+        width: 78.4%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .c-commentary {
+        width: 88.4%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .c-commentary {
+        width: 90%;
+    }
+}

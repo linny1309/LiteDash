@@ -1,0 +1,97 @@
+{
+  "type": "line",
+  "plugins": ["ChartDataLabels", "ChartAnnotation"],
+  "data": {
+    "labels": ["2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2019-01-01","2019-02-01","2019-03-01","2019-04-01","2019-05-01"],
+    "datasets": [
+      {
+        "data": [1.3,2.4,2.5,3.5,2.4,2.3,2.1,2.7,2.6,3.1,3.7,4.0],
+        "label": "Google",
+        "backgroundColor": "rgba(0, 128, 0, 0.500)",
+        "hoverBackgroundColor": "rgb(0, 128, 0)",
+        "borderColor": "rgb(0, 128, 0)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      },
+      {
+        "data": [2.3,3.4,4.5,1.5,3.4,4.3,2.3,2.1,1.1,2.1,3.7,5.0],
+        "label": "YouTube",
+        "backgroundColor": "rgba(255, 41, 41, 0.459)",
+        "hoverBackgroundColor": "rgb(255, 41, 41)",
+        "borderColor": "rgb(255, 41, 41)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      },
+      {
+        "data": [1.3,2.8,3.3,1.8,3.8,3.3,1.3,4.1,3.1,4.1,1.7,3.0],
+        "label": "Facebook",
+        "backgroundColor": "rgba(0, 60, 255, 0.459)",
+        "hoverBackgroundColor": "rgb(0, 60, 255)",
+        "borderColor": "rgb(0, 60, 255)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      }
+    ]
+  },
+  "options": {
+    "annotation": {
+      "annotations": [
+        {
+          "type": "line",
+          "mode": "vertical",
+          "scaleID": "x-axis-0",
+          "value": "Jan-20",
+          "borderColor": "orange",
+          "label": { "enabled": true, "position": "top" }
+        },
+        {
+          "type": "line",
+          "mode": "vertical",
+          "scaleID": "x-axis-0",
+          "value": "Break",
+          "borderColor": "purple",
+          "label": { "enabled": true, "position": "top" }
+        }
+      ]
+    },
+    "title": {
+      "display": true,
+      "text": "Paid Search Clicks per Hour by Website",
+      "fontColor": "white",
+      "fontSize": 20
+    },
+    "legend": { "labels": { "fontSize": 10, "fontColor": "white" } },
+    "scales": {
+      "yAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Paid Search Clicks per Hour (Thousands)"
+          }
+        }
+      ],
+      "xAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Month"
+          }
+        }
+      ]
+    }
+  }
+}

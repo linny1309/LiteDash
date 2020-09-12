@@ -1,0 +1,34 @@
+[
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "bar-chart-struc.json",
+        "title": "Bar Chart",
+        "icon": "bar_chart"
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "combo-chart-struc.json",
+        "title": "Combo Chart",
+        "icon": "multiline_chart"
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "line-chart-struc.json",
+        "title": "Line Chart",
+        "icon": "stacked_line_chart"  
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "scatter-chart-struc.json",
+        "title": "Scatter Chart",
+        "icon": "scatter_plot"  
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "scatter-chart-struc.json",
+        "title": "Scatter Chart",
+        "icon": "scatter_plot"  
+    }
+]
+
+

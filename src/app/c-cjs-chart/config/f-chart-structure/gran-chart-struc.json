@@ -1,0 +1,59 @@
+{
+  "type": "bar",
+  "plugins": "[ChartDataLabels]",
+  "data": {
+    "labels": [],
+    "datasets": [
+      {
+        "label": "Quantity Ordered",
+        "backgroundColor": "rgba(0, 51, 25, 0.5)",
+        "hoverBackgroundColor": "rgb(0, 51, 25)",
+        "borderColor": "rgb(0, 51, 25)",
+        "borderWidth": 2,
+        "datalabels": { "color": "white" }
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "title": {
+      "display": true,
+      "text": "Quantity Ordered",
+      "fontColor": "white",
+      "fontSize": 20
+    },
+    "legend": { "labels": { "fontSize": 10, "fontColor": "white" } },
+    "scales": {
+      "yAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Quantity Ordered"
+          }
+        }
+      ],
+      "xAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+          },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Quarter"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "plugins" : "[ChartDataLabels]",
+    "datasets": [
+      {
+        "fontColor":"white",
+        "label": "Bulk Orders Placed",
+        "data": [22, 30, 36, 49],
+        "type": "bar",
+        "borderColor": "rgb(28, 50, 110)",
+        "backgroundColor": "rgba(28, 50, 110,0.5)",
+        "borderWidth": 2,
+        "order": 1,
+        "beginAtZero": true,
+        "min": 0,
+        "yAxisID": "A"
+      },
+      {
+        "fontColor":"white",
+        "label": "Bulk Orders per Customer",
+        "data": [2, 2, 6, 7],
+        "type": "line",
+        "borderColor": "rgb(234, 0, 128)",
+        "backgroundColor": "rgba(234, 0, 128,0.5)",
+        "borderWidth": 2,
+        "order": 2,
+        "beginAtZero": true,
+        "min": 0,
+        "yAxisID": "B"
+      }
+    ],
+    "labels": ["Q1 2020", "Q2 2020", "Q3 2020", "Q4 2020"]
+  },
+  "options": {
+    "title": {
+      "text": "Bulk Orders Placed vs Bulk Orders per Customer",
+      "display": true,
+      "fontSize": 20,
+      "fontColor": "white"
+    },
+    "scales": {
+      "xAxes": [
+        {
+        "offset": true,
+        "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true
+        },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Quarter"
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "fontColor": "white",
+            "fontSize": 10,
+            "beginAtZero": true,
+            "ticks": { "max": 50, "min": 0 }
+        },
+          "id": "A",
+          "type": "linear",
+          "position": "left",
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Bulk Orders Placed"
+          }
+        },
+        {
+          "id": "B",
+          "type": "linear",
+          "position": "right",
+          "ticks": { "max": 10, "min": 0 },
+          "scaleLabel": {
+            "fontColor": "white",
+            "display": true,
+            "fontSize": 10,
+            "labelString": "Bulk Orders Per Customer"
+          }
+        }
+      ]
+    }
+  }
+}
