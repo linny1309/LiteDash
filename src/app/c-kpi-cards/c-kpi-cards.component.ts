@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CKpiCardsComponent implements OnInit {
 
-  kpiCards: any = require("./f-json-data/kpi-cards-data.json");
+  kpiCards: any = require("../c-cjs-chart/config/f-kpi-card-data/kpi-cards-data.json");
 
   constructor() { }
 

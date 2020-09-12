@@ -7,11 +7,24 @@
 <body id="cNavMenu">
     <div class="c-nav-menu"> 
             <div class="text-collection">
-                <div class="nav-anchor"><div class="nav-title"><span class="material-icons" id="navTitleIcon">explore</span><span class="nav-title-item">Navigation</span><span class="material-icons" id="searchIcon">search</span></div></div>
-                <div class="nav-div"  id="homeButton"><span class="material-icons" id="keyKpisIcon">score</span><span class="material-icons" id="homeIcon"></span><span class="nav-option" id="keyKpisTitle">Key KPIs</span></div>
-                    <div *ngFor="let option of options; index as i; first as isFirst">
-                        <div class="nav-div"  id={{divID[i]}}><span class="material-icons" id={{iconID[i]}}>{{icons[i]}}</span><span class="material-icons" id="homeIcon"></span><span class="nav-option" id={{titleID[i]}}>{{option}}</span></div>
+                <div class="nav-anchor">
+                    <div class="nav-title">
+                        <span class="material-icons" id="navTitleIcon">explore</span>
+                        <span class="nav-title-item">Navigation</span>
+                        <span class="material-icons" id="searchIcon">search</span>
                     </div>
+                </div>
+                <div class="nav-div" id="homeButton">
+                    <span class="material-icons" id="keyKpisIcon">score</span>
+                    <span class="material-icons" id="homeIcon"></span>
+                    <span class="nav-option" id="keyKpisTitle">Key KPIs</span>
+                </div>
+                <div *ngFor="let option of options; index as i; first as isFirst">
+                    <div class="nav-div" id={{divID[i]}}><span class="material-icons" id={{iconID[i]}}>{{icons[i]}}</span>
+                        <span class="material-icons" id="homeIcon"></span>
+                        <span class="nav-option" id={{titleID[i]}}>{{option}}</span>
+                    </div>
+                </div>
             </div>
-    </div>
+        </div>
 </body>
