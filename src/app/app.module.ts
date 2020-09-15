@@ -13,6 +13,7 @@ import { CKpiCardsComponent } from './c-kpi-cards/c-kpi-cards.component';
 import { CCjsChartComponent } from './c-cjs-chart/c-cjs-chart.component';
 import { CTopBarComponent } from './c-top-bar/c-top-bar.component';
 import { CCommentaryComponent } from './c-commentary/c-commentary.component';
+import { CImRoomComponent } from './c-im-room/c-im-room.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CCommentaryComponent } from './c-commentary/c-commentary.component';
     CKpiCardsComponent,
     CCjsChartComponent,
     CTopBarComponent,
-    CCommentaryComponent
+    CCommentaryComponent,
+    CImRoomComponent,
   ],
   imports: [
     BrowserModule,

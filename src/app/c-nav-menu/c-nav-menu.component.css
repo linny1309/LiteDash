@@ -27,10 +27,9 @@
   }
 
   .nav-option {
-    position: fixed;
-    margin-top: 4px;
+    position: static;
+    vertical-align: 35%;
     font-family: Arial, Helvetica, sans-serif;
-    vertical-align: top;
     cursor: pointer;
   }
   
@@ -43,6 +42,7 @@
   }
   
   .text-collection {
+    z-index: 18;
     margin-top: 38px;
   }
   
@@ -50,6 +50,7 @@
     position: relative;
     display: block;
     margin-top: -.5vh;
+    z-index: 18;
   }
   
   .nav-title {
@@ -71,7 +72,7 @@
   #searchIcon {
     vertical-align: center;
     padding-top: .5vh;
-    margin-top: 0.3vh;
+    margin-top: 0.19vh;
     color:rgb(50, 50, 50);
     float: right;
   }
@@ -92,9 +93,12 @@
   }
 
   #cNavMenu {
+  }
+
+  #cNavMenuDiv {
     visibility: hidden;
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.2s,
   }
 
   
@@ -203,7 +207,7 @@
   @media only screen and (max-width: 500px) and (max-height: 480px) {
       .c-nav-menu {
         border-radius: 0.6vh;
-        z-index: 6;
+        z-index: 18;
         nav: 0;
         background-color: rgb(145, 145, 145);
         width: 10em;
@@ -235,7 +239,7 @@
   @media only screen and (min-height: 1350px) {
     .c-nav-menu {
       border-radius: 0.6vh;
-      z-index: 6;
+      z-index: 18;
       left: 0;
       background-color: rgb(145, 145, 145);
       width: 14em;

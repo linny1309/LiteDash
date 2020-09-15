@@ -22,12 +22,6 @@
         "file": "scatter-chart-struc.json",
         "title": "Scatter Chart",
         "icon": "scatter_plot"  
-    },
-    {
-        "path": "./config/f-chart-structure/",
-        "file": "scatter-chart-struc.json",
-        "title": "Scatter Chart",
-        "icon": "scatter_plot"  
     }
 ]
 

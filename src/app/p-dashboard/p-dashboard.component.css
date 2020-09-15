@@ -3,9 +3,3 @@ body {
     height: 100%;
     background-color: lightgray;
 }
-
-#cNavMenu {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-}

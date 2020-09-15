@@ -11,7 +11,7 @@ export class CNavMenuComponent implements OnInit {
 
   constructor() { }
 
-  config: any = require("../c-cjs-chart/config/f-fs-structure/fs-struc.json");
+  files: any = require("../c-cjs-chart/config/f-fs-structure/fs-struc.json");
   options: Array<String> = [];
   icons: Array<String> = [];
   divID: Array<String> = [];
@@ -20,7 +20,7 @@ export class CNavMenuComponent implements OnInit {
   iterate: number = 0;
 
   getUIElements() {
-    this.config.map(option => {
+    this.files.map(option => {
       console.log("Option options: " + JSON.stringify(option.title));
       this.options.push(option.title);
       this.icons.push(option.icon);

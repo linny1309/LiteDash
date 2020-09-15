@@ -9,10 +9,6 @@ export class CTopBarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-
-  }
-
   toggleMenu(menu) {
     if(document.getElementById(menu).style.opacity == "1") {
       document.getElementById(menu).style.opacity = "0";
@@ -22,6 +18,10 @@ export class CTopBarComponent implements OnInit {
       document.getElementById(menu).style.opacity = "1";
       document.getElementById(menu).style.visibility = "visible";
     }
+  }
+
+    ngOnInit(): void {
+
   }
 
 }
