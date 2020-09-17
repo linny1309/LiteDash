@@ -14,12 +14,12 @@ import * as ChartLabels from 'chartjs-plugin-Datalabels';
 })
 export class CCjsChartComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
-
   visuals: Array<Object> = [];
   chart: Chart;
   buttonTypes: Array<String> = ['navIcon','navTitl','navDivi'];
-  files: any = require("./config/f-fs-structure/fs-struc.json");
+  files: any = require("./config/f-fs-structure/nav-struc.json");
+
+  constructor(private http: HttpClient) { }
 
   onChange(event) {
 

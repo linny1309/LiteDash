@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Profile",
+        "icon": "account_box"
+    },
+    {
+        "title": "Chat",
+        "icon": "chat"
+    },
+    {
+        "title": "Calendar",
+        "icon": "today"
+    },
+    {
+        "title": "Option",
+        "icon": "settings"
+    }
+]
+
+

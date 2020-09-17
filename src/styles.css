@@ -13,6 +13,7 @@
     width: 8px;
     height: 8px;
     padding-right: 1vh;
+    display: none !important;
   }
   
   /* Track */
@@ -33,9 +34,20 @@
   }
 
   body::-webkit-scrollbar {
-    display: none;
+    -ms-overflow-style: none;
+    display: none !important;
+  }
+
+  ::-moz-any() {
+    width: 0;
   }
 
   body {
-      background-color: rgb(26, 26, 26);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background-color: rgb(26, 26, 26);
+  }
+
+  * {
+    scrollbar-width: 0;
   }

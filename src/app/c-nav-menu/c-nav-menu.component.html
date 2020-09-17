@@ -20,7 +20,8 @@
                     <span class="nav-option" id="keyKpisTitle">Key KPIs</span>
                 </div>
                 <div *ngFor="let option of options; index as i; first as isFirst" id="navOptions">
-                    <div class="nav-div" id={{divID[i]}}><span class="material-icons" id={{iconID[i]}}>{{icons[i]}}</span>
+                    <div class="nav-div" id={{divID[i]}}>
+                        <span class="material-icons" id={{iconID[i]}}>{{icons[i]}}</span>
                         <span class="nav-option" id={{titleID[i]}}>{{option}}</span>
                     </div>
                 </div>

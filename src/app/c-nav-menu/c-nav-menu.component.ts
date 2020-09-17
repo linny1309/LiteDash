@@ -11,7 +11,7 @@ export class CNavMenuComponent implements OnInit {
 
   constructor() { }
 
-  files: any = require("../c-cjs-chart/config/f-fs-structure/fs-struc.json");
+  files: any = require("../c-cjs-chart/config/f-fs-structure/nav-struc.json");
   options: Array<String> = [];
   icons: Array<String> = [];
   divID: Array<String> = [];

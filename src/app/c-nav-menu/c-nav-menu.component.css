@@ -61,7 +61,6 @@
     padding-top: .3vh;
     padding-bottom: .3vh;
     background-color: rgb(228, 228, 228);
-    margin-bottom: 0.7vh;
   }
   
   #navTitleIcon {
@@ -180,6 +179,10 @@
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+  .nav-div:hover { 
+    background-color: gray;
+  }
   
   .c-nav-icons::selection {
     margin-top: 5vh;
@@ -222,16 +225,13 @@
     }
   
     span {
-      font-size: 10px;
     }
   
     span .material-icons {
       display: none;
-      font-size: 20px;
     }
     
     .nav-div { 
-      font-size: 10px;
     }
   
   }

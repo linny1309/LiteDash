@@ -7,10 +7,12 @@
     display: flex;
     justify-content: center;
     z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
 }
 
 .c-im-iframe {
-    visibility: hidden;
     z-index: 9;
     position: sticky;
     margin-top: 20px;
@@ -20,4 +22,5 @@
     border-style: solid;
     border-color: gray;
     border-width: 1px;
+    border-color: rgb(48, 48, 48);
 }
