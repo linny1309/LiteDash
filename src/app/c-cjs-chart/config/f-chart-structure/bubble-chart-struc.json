@@ -4,9 +4,7 @@
   "data": {
     "datasets": [
       {
-        "x": [0],
-        "y": [0],
-        "r": [0],
+        "data":[{"x": 1, "y":20, "r":8},{"x": 2, "y":24, "r":15},{"x": 3, "y":29, "r":22},{"x": 4, "y":31, "r":25},{"x": 5, "y":35, "r":29}],
         "label": "Brand A",
         "backgroundColor": "rgba(128, 0, 128, 0.5)",
         "borderColor": "rgb(128, 0, 128)",
@@ -14,9 +12,7 @@
         "datalabels": { "color": "white" }
       },
       {
-        "x": [0],
-        "y": [0],
-        "r": [0],
+        "data":[{"x": 1, "y":15, "r":7},{"x": 2, "y":20, "r":14},{"x": 3, "y":24, "r":20},{"x": 4, "y":29, "r":20},{"x": 5, "y":31, "r":28}],
         "label": "Brand B",
         "backgroundColor": "rgba(0,255,255,0.5)",
         "borderColor": "rgb(0,255,255)",
@@ -24,9 +20,7 @@
         "datalabels": { "color": "white" }
       },
       {
-        "x": [0],
-        "y": [0],
-        "r": [0],
+        "data":[{"x": 1, "y":13, "r":7},{"x": 2, "y":20, "r":13},{"x": 3, "y":20, "r":21},{"x": 4, "y":27, "r":24},{"x": 5, "y":30, "r":27}],
         "label": "Brand C",
         "backgroundColor": "rgb(255,140,0,0.5)",
         "borderColor": "rgb(255,140,0)",

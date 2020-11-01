@@ -25,10 +25,12 @@ export class CImRoomComponent implements OnInit {
       if(document.getElementById("cImRoom").style.opacity == "1") {
         document.getElementById("cImRoom").style.opacity = "0";
         document.getElementById("cImRoom").style.visibility = "hidden";
+        document.getElementById("optIcon1").innerHTML = "chat"
       }
       else {
         document.getElementById("cImRoom").style.opacity = "1";
         document.getElementById("cImRoom").style.visibility = "visible";
+        document.getElementById("optIcon1").innerHTML = "highlight_off"
       }
   }
 

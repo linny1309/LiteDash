@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'c-filter-menu',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CFilterMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   filterGroups: Array<string> = ['qFilter','yearFilter','granFilter','noFilter'];
   filterSequence: Array<string> = ['qFilter','yearFilter','granFilter','noFilter','noFilter','noFilter','noFilter','yearFilter','qFilter','yearFilter'];
@@ -17,11 +18,15 @@ export class CFilterMenuComponent implements OnInit {
     this.changeFilter(2);
   }
 
-  onChange(event) {
+  onChange(event): void {
     var targetID = (event.target.id).toString();
-    var targetSub = targetID.substring(0,7); 
+    var targetSub = targetID.substring(0,7);
+    
+    if((targetID.substring(0,7) == "navIcon" || targetID.substring(0,7) == "navTitl" || targetID.substring(0,7) == "navDivi"))
+      this.mapFilter(targetID, targetSub, event.target.id);
 
-    this.mapFilter(targetID, targetSub, event.target.id);
+    else if((targetID.substring(0,5) == "check"))
+      this.sendFilterChange(event.target.id)
   }
 
   mapFilter(targetID, targetSub, eventTargetId) {
@@ -47,5 +52,18 @@ export class CFilterMenuComponent implements OnInit {
         document.getElementById(this.filterSequence[n]).style.display = "block";
       }
     }
+  }
+
+  sendFilterChange(id) {
+    var inputElement = <HTMLInputElement>document.getElementById(id);
+    var inputValue = <string>inputElement.value;
+    console.log(inputValue);
+
+    var jsonData = {
+      "value": inputValue
+    }
+
+    this.http.post<any>('http://localhost:8801/users', jsonData)
+      .subscribe(next => console.log(next));
   }
 }

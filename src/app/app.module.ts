@@ -14,6 +14,7 @@ import { CCjsChartComponent } from './c-cjs-chart/c-cjs-chart.component';
 import { CTopBarComponent } from './c-top-bar/c-top-bar.component';
 import { CCommentaryComponent } from './c-commentary/c-commentary.component';
 import { CImRoomComponent } from './c-im-room/c-im-room.component';
+import { CCjsTensorChartComponent } from './c-cjs-tensor-chart/c-cjs-tensor-chart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CImRoomComponent } from './c-im-room/c-im-room.component';
     CTopBarComponent,
     CCommentaryComponent,
     CImRoomComponent,
+    CCjsTensorChartComponent,
   ],
   imports: [
     BrowserModule,

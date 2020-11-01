@@ -1,0 +1,33 @@
+{
+    "type": "pie",
+    "options": {
+      "scaleFontColor": "white",
+      "labelColor": "white",
+      "title": {
+        "display": true,
+        "text": "Tensor Data Spready",
+        "fontSize": 20
+      },
+      "scales": { "scaleLabel": { "fontColor": "white" } }
+    },
+    "data": {
+      "labels": ["Head", "Body", "Arms"],
+      "color": "white",
+      "fontColor": "white",
+      "scaleFontColor": "white",
+      "datasets": [
+        {
+          "scaleFontColor": "white",
+          "backgroundColor": [
+            "purple",
+            "olive",
+            "navy"
+          ],
+          "borderColor": ["magenta", "yellow", "blue"],
+          "color": "white",
+          "data": [32, 10, 58],
+          "datalabels": { "color": "white" }
+        }
+      ]
+    }
+  }

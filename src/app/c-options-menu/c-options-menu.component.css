@@ -96,6 +96,7 @@
   }
   
   .options-div { 
+      padding-bottom: 3px;
       overflow-x: none;
       border:0.05em solid rgb(51, 51, 51);
       border-right: none;
@@ -111,6 +112,10 @@
             -ms-user-select: none; /* Internet Explorer/Edge */
                 user-select: none; /* Non-prefixed version, currently
                                       supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .options-div:hover { 
+      background-color: rgb(26, 26, 26);
     }
 
     .material-icons {

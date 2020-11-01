@@ -22,6 +22,18 @@
         "file": "scatter-chart-struc.json",
         "title": "Scatter Chart",
         "icon": "scatter_plot"  
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "pie-chart-struc.json",
+        "title": "Pie Chart",
+        "icon": "pie_chart"  
+    },
+    {
+        "path": "./config/f-chart-structure/",
+        "file": "bubble-chart-struc.json",
+        "title": "Bubble Chart",
+        "icon": "bubble_chart"  
     }
 ]
 

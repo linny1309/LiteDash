@@ -26,7 +26,9 @@ export class CCjsChartComponent implements OnInit {
     var targetID: String = (event.target.id).toString();
     var targetSub: String = targetID.substring(0,7); 
 
-    this.mapChart(targetID, targetSub, event.target.id);
+    if(targetID.substring(0,7) == "navIcon" || targetID.substring(0,7) == "navTitl" || targetID.substring(0,7) == "navDivi") {
+      this.mapChart(targetID, targetSub, event.target.id);
+    }
   }
 
   mapChart(targetID, targetSub, eventTargetId) {
@@ -35,6 +37,7 @@ export class CCjsChartComponent implements OnInit {
       for(buttonType = 0; buttonType < this.buttonTypes.length; buttonType++)
           if((targetID.substring(0,7) == this.buttonTypes[buttonType])) {
             for(visual = 0; visual < this.visuals.length; visual++) {
+              console.log(eventTargetId.toString());
               if(eventTargetId === targetSub+visual.toString()) {
                 this.changeChart(visual);
               }
@@ -44,9 +47,11 @@ export class CCjsChartComponent implements OnInit {
   }
 
   changeChart(visual) {
-    this.chart.destroy();
 
-    console.log("Current visual data: " + JSON.stringify(this.visuals[0]));
+    if(this.chart != undefined) {
+      this.chart.destroy();
+      console.log("Current visual data: " + JSON.stringify(this.visuals[0]));
+    }
 
     this.http.post<any>('http://localhost:8801/users', this.visuals[visual])
       .subscribe(next => console.log(next));
@@ -63,6 +68,10 @@ export class CCjsChartComponent implements OnInit {
 
   initChart() {
     Chart.defaults.push([ChartLabels]);
+  }
+
+  destroyChart() {
+    this.chart.destroy();
   }
 
   ngOnInit(): void {

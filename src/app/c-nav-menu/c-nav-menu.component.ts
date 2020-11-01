@@ -21,7 +21,7 @@ export class CNavMenuComponent implements OnInit {
 
   getUIElements() {
     this.files.map(option => {
-      console.log("Option options: " + JSON.stringify(option.title));
+      console.log("c-nav-menu: options: " + JSON.stringify(option.title));
       this.options.push(option.title);
       this.icons.push(option.icon);
       this.divID.push("navDivi"+this.iterate);
